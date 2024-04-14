@@ -18,10 +18,7 @@ body, html {
     margin-bottom: 2vh;
 }
 
-
-
 .equipe {
-   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,14 +56,13 @@ body, html {
     .sobre {
         margin-right: 0;
         margin-bottom: 5;
-        
     }
     .sobre p {
         width: 80%;
         height: 40vh;
         padding: 10%;
     }
-    
+
     .sobre img {
         background-size: cover;
         background-position: center;
