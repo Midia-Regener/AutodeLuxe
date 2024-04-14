@@ -16,35 +16,7 @@ section.carrossel {
 }
 
 
-/* Corpo da página */
-main {
-    width: 100%;
-    background-color: #353535;
-}
 
-section.o_que_fazemos {
-    display: flex;  
-    justify-content: center;
-    align-items: center;
-    margin-top: 5vh;
-}
-
-.setas {
-    cursor: pointer;
-    height: 90px;
-    width: 90px;
-}
-
-.o_que_fazemos > p {
-    align-self: flex-start;
-    text-align: justify;
-    width: 500px;
-    margin: 0px 30px 0px 20px;
-}
-
-.img_o_que_fazemos {
-    margin: 0px 20px 0px 0px;
-}
 
 /* Perguntas frequentes */
 .perguntas_frequentes {
