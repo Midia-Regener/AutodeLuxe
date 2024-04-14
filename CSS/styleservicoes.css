@@ -1,0 +1,101 @@
+body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #2a2929;
+            color: white;
+        }
+
+        .carrosel {
+            background-image: url('../img/chevete.jpeg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            opacity: 0.7;
+            transition: 2s;
+        }
+        .carrosel a {
+            transition: 10s;
+            
+        }
+        .carrosel img {
+            width: 80%;
+            height: auto;
+            padding-bottom: 5%;
+            align-self: center;
+            filter: brightness(100%);
+        }
+
+        .servicoes {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            border-top: 1px solid black;
+        }
+
+        .fotos, .fotos1, .fotos2 {
+            display: flex;
+            justify-content: space-between;
+            border: 0.2vh solid black;
+            opacity: 0.6;
+            flex: 1;
+        }
+
+        .fotos .imagem-hover{
+            width: 50%;
+            height: 50vh; transition: 1.5s;
+        }
+
+        .fotos .imagem-hover img {
+            width: 100%;
+            height: 50vh; 
+            object-fit: cover;
+            border: 0.2vh solid black;
+            transition: width 0.5s, height 0.5s;
+        }
+
+        .fotos .imagem-hover:hover  {
+            width: 110%;
+        }
+
+        .fotos1 .imagem-hover:hover:not(:hover), .imagem-hover:hover:not(:hover) {
+            width: 90%;
+        }
+
+        .imagem-hover {
+            position: relative;
+            
+        }
+        
+        .imagem-hover:hover img {
+            filter: brightness(70%);
+        }
+        
+        .texto-hover {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        .imagem-hover:hover .texto-hover {
+            opacity: 1;
+        }
+        
+
+        .descricao {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .descricaotexto {
+            max-width: 600px;
+            text-align: center;
+        }
