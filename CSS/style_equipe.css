@@ -6,7 +6,6 @@ body, html {
     color: white;
 }
 
-
 .carrossel {
     background-image: url('../img/chevete.jpeg');
     background-size: cover;
@@ -20,9 +19,7 @@ body, html {
 }
 
 .equipe {
-
    
- Freire
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,19 +55,17 @@ body, html {
     }
 
     .sobre {
-
         display: block;
         margin-right: 0;
         margin-bottom: 5;
         
-
     }
     .sobre p {
         width: 80%;
         height: 40vh;
         padding: 10%;
     }
-
+    
     .sobre img {
         background-size: cover;
         background-position: center;
