@@ -1,0 +1,12 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #353535;
+    padding: 35px 0px 35px 0px;
+}
+
+#mapa {
+    height: 400px;
+    width: 400px;
+    margin: 0px 5% 0px 0px;
+}

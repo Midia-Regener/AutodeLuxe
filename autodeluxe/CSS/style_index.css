@@ -52,6 +52,7 @@ a {
 .setas_baixo {
     height: 90px;
     width: 110px;
+    margin-left: 5px;
 }
 
 /* Corpo da página */
