@@ -13,10 +13,12 @@ header > nav > img {
     margin-left: 6%;
 }
 
-nav {
+.nav_cabecalho {
     display: flex;
     justify-content: space-between;
-    width: 500px;
+    align-items: center;
+    width: 570px;
+    overflow: hidden;
 }
 
 nav > ul {
@@ -29,28 +31,13 @@ nav > ul {
 
 header > button {
     margin: 0px 3% 0px 0px;
-    background-color: none;
+    background-color: #1c1c1cb6;
+    border: 0px;
 }
 
 a {
     text-decoration: none;
     color: #ffffff;
-    position: relative;
-}
-
-a::after {
-    content: " ";
-    width: 0%;
-    height: 4px;
-    background-color: #ffffff;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 1s ease-in-out;
-}
-
-a:hover::after {
-    width: 70%;
 }
 
 .icone-menu {
@@ -58,13 +45,24 @@ a:hover::after {
 }
 
 /* Responsividade do cabeçalho para desktop. */
+@media (max-width: 1050px) {
+    .img_logo {
+        width: 170px;
+        height: 59px;
+    }
+
+    .nav_cabecalho {
+        width: 500px;
+    }
+}
+
 @media (max-width: 750px) {
     header > img {
         width: 130px;
         height: 49px;
     }
 
-    nav {
+    .nav_cabecalho {
         width: 440px;
     }
 
@@ -87,7 +85,7 @@ a:hover::after {
         margin-right: 15px;
     }   
 
-    nav {
+    .nav_cabecalho {
         display: block;
         position: absolute;
         top: 15vh;
@@ -125,9 +123,4 @@ a:hover::after {
         opacity: 1;
         padding: 0px 0px 5px 0px;
     }
-
-    a:hover::after {
-        width: 100%;
-    }
-
 }
