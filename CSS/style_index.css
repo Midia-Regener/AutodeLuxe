@@ -2,10 +2,11 @@
     margin: 0px;
     padding: 0px;
     color: #ffffff;
+
 }
 
 section.carrossel {
-    background-image: url("../img/chevete.jpeg");
+    background-image: url("../img/Index.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -22,6 +23,7 @@ section.carrossel > div {
     height: auto;
     width: auto;
     margin-top: 60vh;
+    background: rgb(0, 0, 0, 0);
 }
 
 /* Carrossel de navegação*/
@@ -78,6 +80,7 @@ section.o_que_fazemos {
     text-align: justify;
     width: 500px;
     margin: 0px 30px 0px 20px;
+    font-size: 1.7em;
 }
 
 .img_o_que_fazemos {
@@ -89,8 +92,15 @@ section.o_que_fazemos {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 80vh;
     width: 100%;
     margin: 30px 0px 0px 0px;
+}
+
+.perguntas_frequentes h2 {
+
+    font-size: 3em
+
 }
 
 .box_pergunta {
@@ -136,5 +146,6 @@ section.o_que_fazemos {
 
 .seta_pergunta {
     height: 100%;
-    width: 100%;
+    width: 100%
 }
+

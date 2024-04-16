@@ -1,9 +1,6 @@
-* {
-    background-color: #2a2929;
-}
 
 footer {
-    margin-top: 8vh;
+    background-color: #2a2929;
 }
 
 .footer_informacoes {
@@ -125,4 +122,30 @@ footer {
         display: block;
     }
 
+}
+
+.faixa_amarela {
+    width: 100%;
+}
+
+.faixa_amarela img {
+    height: 30vh;
+    width: 100%;
+}
+@keyframes fill {
+    0% {
+        background-color: white; /* Começa branco */
+    }
+    100% {
+        background-color: green; /* Termina verde */
+    }
+}
+
+.fill-button {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white; /* Inicialmente branco */
+    animation: fill 10s forwards; /* Animação de preenchimento em 10 segundos */
 }
