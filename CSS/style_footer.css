@@ -1,9 +1,7 @@
-* {
-    background-color: #2a2929;
-}
 
 footer {
     margin-top: 8vh;
+    background-color: #2a2929;
 }
 
 .footer_informacoes {
@@ -125,4 +123,13 @@ footer {
         display: block;
     }
 
+}
+
+.faixa_amarela {
+    width: 100%;
+}
+
+.faixa_amarela img {
+    height: 30vh;
+    width: 100%;
 }
