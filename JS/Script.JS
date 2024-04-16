@@ -57,3 +57,13 @@ function verificarSeccaoCarrosselVisivel() {
 
 // Chama a função para iniciar a verificação se a seção do carrossel está visível
 verificarSeccaoCarrosselVisivel();
+
+// JavaScript para parar a animação se o usuário rolar a tela
+document.addEventListener("DOMContentLoaded", function() {
+    // Seleciona o botão preenchido
+    const fillButton = document.querySelector('.fill-button');
+    // Adiciona um evento de rolagem para parar a animação
+    window.addEventListener('scroll', function() {
+        fillButton.style.animationPlayState = 'paused';
+    });
+});
