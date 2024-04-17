@@ -99,9 +99,7 @@ section.o_que_fazemos {
 }
 
 .perguntas_frequentes h2 {
-
     font-size: 3em
-
 }
 
 .box_pergunta {
@@ -165,6 +163,10 @@ section.o_que_fazemos {
     .img_o_que_fazemos {
         width: 270px;
     }
+
+    .perguntas_frequentes > h2 {
+        font-size: 2em;
+    }
 }
 
 @media (max-width: 630px) {
@@ -192,4 +194,10 @@ section.o_que_fazemos {
     .img_o_que_fazemos {
         width: auto;
     }
-} 
+}
+
+@media (max-width: 350px) {
+    .perguntas_frequentes > h2 {
+        font-size: 1.7em;
+    }
+}
