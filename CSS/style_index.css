@@ -78,9 +78,9 @@ section.o_que_fazemos {
 .o_que_fazemos > p {
     align-self: flex-start;
     text-align: justify;
-    width: 500px;
+    max-width: 500px;
     margin: 0px 30px 0px 20px;
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
 
 .img_o_que_fazemos {
@@ -92,9 +92,10 @@ section.o_que_fazemos {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
+    height: auto;
     width: 100%;
     margin: 30px 0px 0px 0px;
+    padding: 0px 0px 20px 0px;
 }
 
 .perguntas_frequentes h2 {
@@ -149,3 +150,46 @@ section.o_que_fazemos {
     width: 100%
 }
 
+/* Responsividade para desktop */
+@media (max-width: 900px) {
+    .o_que_fazemos > p {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 740px) {
+    .o_que_fazemos > p {
+        font-size: 1.1em;
+    }    
+
+    .img_o_que_fazemos {
+        width: 270px;
+    }
+}
+
+@media (max-width: 630px) {
+    .o_que_fazemos > p {
+        font-size: 1em;
+    }    
+
+    .img_o_que_fazemos {
+        width: 200px;
+    }
+}
+
+/* Responsividade para mobile */
+@media (max-width: 560px) {
+    section.o_que_fazemos {
+        flex-direction: column;
+    }
+
+    .o_que_fazemos > p {
+        align-self: center;
+        max-width: 400px;
+        margin-bottom: 30px;
+    }
+
+    .img_o_que_fazemos {
+        width: auto;
+    }
+} 

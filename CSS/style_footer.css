@@ -60,7 +60,7 @@ footer {
 @media (max-width: 600px) {
 
     footer {
-        margin-top: 5vh;
+        padding-top: 5vh;
     }    
 
     .footer_principal {
@@ -114,10 +114,10 @@ footer {
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 580px) {
    
     .footer_principal {
-        height: 115vh;
+        height: auto;
         width: 100%;
         display: block;
     }

@@ -9,8 +9,8 @@ header {
     background-color: #1c1c1cb6;
 }
 
-header > nav > img {
-    margin-left: 6%;
+.img_logo {
+    margin-left: 2%;
 }
 
 .nav_cabecalho {
@@ -122,5 +122,6 @@ header > button {
     a.mobile {
         opacity: 1;
         padding: 0px 0px 5px 0px;
+        color: #ffffff !important;
     }
 }
