@@ -31,7 +31,7 @@ nav > ul {
 
 header > button {
     margin: 0px 3% 0px 0px;
-    background-color: #1c1c1cb6;
+    background-color: #1c1c1cb6 !important;
     border: 0px;
 }
 
