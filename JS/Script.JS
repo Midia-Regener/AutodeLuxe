@@ -11,17 +11,17 @@ function redirecionarEntrePaginas() {
         case 'Index.html':
             timeoutId = setTimeout(() => {
                 window.location.href = 'servicos.html'; // Redireciona para servicos.html após o tempo limite
-            }, 10000); // Tempo limite em milissegundos (por exemplo, 10 segundos)
+            }, 4000); // Tempo limite em milissegundos (por exemplo, 10 segundos)
             break;
         case 'servicos.html':
             timeoutId = setTimeout(() => {
                 window.location.href = 'equipe.html'; // Redireciona para equipe.html após o tempo limite
-            }, 10000); // Tempo limite em milissegundos (por exemplo, 10 segundos)
+            }, 4000); // Tempo limite em milissegundos (por exemplo, 10 segundos)
             break;
         case 'equipe.html':
             timeoutId = setTimeout(() => {
                 window.location.href = 'Index.html'; // Redireciona para Index.html após o tempo limite
-            }, 10000); // Tempo limite em milissegundos (por exemplo, 10 segundos)
+            }, 4000); // Tempo limite em milissegundos (por exemplo, 10 segundos)
             break;
         default:
             break;
