@@ -37,10 +37,22 @@ nav > button {
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
-    background-image: linear-gradient(45, white, green);
+}
+
+#circular-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+  }
+
+li > a {
+    background-color: #ffff0000;
 }
 
 a {
@@ -50,7 +62,7 @@ a {
     border-radius: 50%;
     background-color: #ffffff;
     height: 80%;
-    width: 80%;
+    width: 100%;
 }
 
 .setas_baixo {
@@ -60,46 +72,44 @@ a {
 
 /* TESTE DA ANIMAÇÃO*/
 
-.circular-loader {
+.animar_loading {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 100px;
     border-radius: 50%;
     position: relative;
-    margin: 20px auto;
     overflow: hidden;
   }
   
-  .circular-loader::before {
+  .animar_loading::before {
     content: "";
     display: block;
     position: absolute;
     width: 100%;
     height: 100%;
     background: conic-gradient(
-        #3498db 0%,
-        #3498db 25%,
+        #cbd80e 0%,
+        #cbd80e 100%,
         transparent 25%,
         transparent 100%,
-        #3498db 75%,
-        #3498db 100%
+        #cbd80e 50%,
+        #cbd80e 100%
         );
     border-radius: 50%;
-    animation: fill 5s linear forwards;
     clip-path: circle(50% at 50% 50%);
     top: 0;
     left: 0;
+    animation: carregar 6s linear infinite;
   }
   
-@keyframes fill {
+@keyframes carregar {
     0% {
-        background-position: 0 0;
-    }
+        transform: translateY(-100%);
+      }
+
     100% {
-        background-position: 100% 0;
-    }
+        transform: translateY(5%);
+      }
 }
 
 .meio_botao {
@@ -108,5 +118,5 @@ a {
     height: 80%;
     border-radius: 50%;
     background-color: white;
-    z-index: 9000;
+    z-index: 2;
 }
