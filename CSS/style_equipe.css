@@ -14,13 +14,12 @@ main {
 
 section.equipe {
     display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 50px;
     background-color: #2a2929; 
     color: white; 
     height: auto;
-    width: 50%;
+    width: 80%;
     padding: 50px 0px 0px 0px;
 }
 
@@ -30,25 +29,28 @@ div.efeito_fade {
     align-items: center;
     height: 500px;
     width: 100%;
+    position: relative; /* Referência que o outro elemento (filho) toma para se posicionar */
 }
 
 .p_efeito_fade {
     opacity: 0;
+    z-index: 2;
     position: absolute;
     left: 10%; /* Distância de 20px da borda esquerda do elemento pai */
     height: 30%;
-    width: 40%;
-    font-size: 1.5em;
+    width: 90%;
+    font-size: 1.3em;
     text-align: justify;
     transition: transform 1s, opacity 1.8s ease-in-out;
 }
 
 .paragrafo_ativo {
-    transform: translateX(50%);
+    transform: translateX(10%);
     opacity: 1;
 }
 
 .img_efeito_fade {
+    z-index: 5;
     height: 100%;
     width: 100%;
     border-radius: 5% 5% 5% 5%;
@@ -62,76 +64,55 @@ div.efeito_fade {
     opacity: 0;
 }
 
-@media (max-width: 600px) {
-    .equipe {
-        flex-direction: column;
-        align-items: center;
-        height: 300vh;
-        gap: 30px;
+@media (max-width: 1150px) {
+    div.efeito_fade {
+        height: 380px;
     }
 
-    .grid_item {
-        height: 350px;
-        width: 70%;
-        border-radius: 5% 5% 5% 5%;
-        margin: 0px;
-        text-align: justify;
-    }
-
-    .sobre {
-        display: block;
-        margin-right: 0;
-        margin-bottom: 5;
-        
-    }
-    .sobre p {
-        width: 80%;
-        height: 40vh;
-        padding: 10%;
-    }
-    
-    .sobre img {
-        background-size: cover;
-        background-position: center;
-        height: 50vh;
-        width: 80%;
-        display: flex;
-        padding: 10%;
+    .p_efeito_fade {
+        font-size: 1.2em;
     }
 }
 
-@media (max-width:400px) {
-    
-    .equipe {
+@media (max-width: 950px) {
+    div.efeito_fade {
+        height: 300px;
+    }
+
+    .p_efeito_fade {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 800px) {
+    section.equipe { 
+        flex-direction: column;
+        width: 55%;
+    }
+
+    .p_efeito_fade {
+        width: 85%;
+    }
+
+    .paragrafo_ativo {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 600px) {
+    section.equipe {
         flex-direction: column;
         align-items: center;
-        height: 350vh;
+        gap: 80px;
+        width: 70%;
     }
 
-    .sobre {
-        display: block;
-        margin-right: 0;
-        margin-bottom: 5vh;
-        
-    }
-    .sobre p {
-        width: 80%;
-        height: 40vh;
-        padding-left: 10%;
-        padding-right: 5%;
-        margin-top: 0%;
-        margin-bottom: 50vh;
-    }
-    
-    .sobre img {
-        background-size: cover;
-        background-position: center;
-        height: 50vh;
-        width: 80%;
-        display: flex;
-        padding: 10%;
-        margin-top: 0%;
-        margin-bottom: 0vh;
+    div.efeito_fade {
+        height: 220px;
     }
 
+    .p_efeito_fade {
+        left: 0;
+        width: 100%;
+    }
 }
